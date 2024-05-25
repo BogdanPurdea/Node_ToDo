@@ -1,4 +1,4 @@
-# Todo List Application
+# Todo List Application(MEAN Stack)
 
 This is an Angular application for managing a todo list with features like add, update (mark complete/pending), delete, and drag-and-drop reordering.
 
