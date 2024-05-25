@@ -1,0 +1,10 @@
+<form (ngSubmit)="submitTodo()" class="mb-3">
+    <div class="form-group row">
+        <label for="newTodoTitle" class="col-sm-1 col-form-label mb-3">New Todo :</label>
+        <div class="col-sm-4">
+        <input [(ngModel)]="newTodoTitle" type="text" class="form-control" 
+            id="newTodoTitle" name="newTodoTitle" required>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Todo</button>
+</form>
