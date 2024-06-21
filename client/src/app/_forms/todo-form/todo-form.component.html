@@ -1,7 +1,7 @@
 <form (ngSubmit)="submitTodo()" class="mb-3">
-    <div class="form-group row">
-        <label for="newTodoTitle" class="col-sm-1 col-form-label mb-3">New Todo :</label>
-        <div class="col-sm-4">
+    <div>
+        <label for="newTodoTitle" class="mb-1">New Todo :</label>
+        <div class="col-sm-4" style="padding-bottom: 20px">
         <input [(ngModel)]="newTodoTitle" type="text" class="form-control" 
             id="newTodoTitle" name="newTodoTitle" required>
         </div>

@@ -5,7 +5,7 @@ module.exports = {
 
     getDbConnectionString: function() {
         return 'mongodb+srv://' + configValues.username + ':' + 
-            configValues.password + '@cluster0.af7lknx.mongodb.net/node_todo_sample';
+            configValues.password + configValues.database;
     }
 
 }
