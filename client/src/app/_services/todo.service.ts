@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class TodoService {
 
-  private todosApiUrl = 'http://localhost:3000/api/todo/';
+  private todosApiUrl = 'http://localhost:10000/api/todo/';
 
   private username = 'johndoe';
 
