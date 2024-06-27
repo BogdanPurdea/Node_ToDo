@@ -11,7 +11,7 @@ This is an Angular application for managing a todo list with features like add, 
 - **Real-time Updates**: The list reflects changes (addition, deletion, completion status) immediately without requiring a page refresh.
 
 ## Latest Deployed Version
-The latest deployed version of the application can be accessed [here](https://node-todo-ohta.onrender.com)).
+The latest deployed version of the application can be accessed [here](https://node-todo-ohta.onrender.com).
 
 **Note:** The data associated with the deployed version is mocked data meant to demonstrate the functional features.
 
