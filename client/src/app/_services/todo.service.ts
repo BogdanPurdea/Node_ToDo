@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { HttpHeaders, HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Todo } from '../_models/todo';
-import { Observable, map } from 'rxjs';
+import { Observable, map, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TodoService {
 
-  private todosApiUrl = 'http://localhost:10000/api/todo/';
+  private todosApiUrl = 'http://localhost:3000/api/todo/';
 
   private username = 'johndoe';
 
@@ -34,5 +34,9 @@ export class TodoService {
 
   deleteTodo(id: string): Observable<any> {
     return this.http.delete(this.todosApiUrl + id);
+  }
+
+  private handleError(error: HttpErrorResponse) {
+    console.error('An error occurred: ', error);
   }
 }
