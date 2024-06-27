@@ -16,7 +16,8 @@ The latest deployed version of the application can be accessed [here](https://no
 **Note:** The data associated with the deployed version is mocked data meant to demonstrate the functional features.
 
 ## TODO
-- **Backend**: Add functionality to handle reordering of todo items. This will ensure that changes in the order are persisted in the database.
+- **Backend reordering implementation**: Add functionality to handle reordering of todo items. This will ensure that changes in the order are persisted in the database.
+- **User Authentication**: Add user authentication functionality to secure the application. This will allow users to register, login, and manage their own todo lists securely.
   
 ## Technology Stack (MEAN Stack)
 
