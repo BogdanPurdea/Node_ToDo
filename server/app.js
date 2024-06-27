@@ -7,7 +7,19 @@ var config = require('./config');
 var setupController = require('./controllers/setupController')
 var apiController = require('./controllers/apiController');
 
-app.use(cors());
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:4200', 'https://node-todo-ohta.onrender.com'];
+
+app.use(cors({
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps, curl, etc.)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.indexOf(origin) === -1) {
+        const msg = 'The CORS policy for this site does not allow access from the specified origin.';
+        return callback(new Error(msg), false);
+      }
+      return callback(null, true);
+    }
+  }));
 app.use((req, res, next) => {  
     res.header("Access-Control-Allow-Headers",  
                "Origin, X-Requested-With, Content-Type, Accept"); 
