@@ -10,6 +10,14 @@ This is an Angular application for managing a todo list with features like add, 
 - **Reorder Todos**: Users can drag and drop todo items to change their order in the list.
 - **Real-time Updates**: The list reflects changes (addition, deletion, completion status) immediately without requiring a page refresh.
 
+## Latest Deployed Version
+The latest deployed version of the application can be accessed [here](https://node-todo-ohta.onrender.com)).
+
+**Note:** The data associated with the deployed version is mocked data meant to demonstrate the functional features.
+
+## TODO
+- **Backend**: Add functionality to handle reordering of todo items. This will ensure that changes in the order are persisted in the database.
+  
 ## Technology Stack (MEAN Stack)
 
 - **Frontend**: Angular
