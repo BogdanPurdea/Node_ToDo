@@ -10,7 +10,7 @@ var apiController = require('./controllers/apiController');
 app.use(cors());
 app.use((req, res, next) => { 
     res.header("Access-Control-Allow-Origin",  
-               "http://localhost:4200"); 
+               ["http://localhost:4200", "https://node-todo-ohta.onrender.com"]); 
     res.header("Access-Control-Allow-Headers",  
                "Origin, X-Requested-With, Content-Type, Accept"); 
     next(); 
@@ -21,7 +21,8 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 
 mongoose.connect(config.getDbConnectionString())
-    .then(() => console.log('Connected to the database!'));
+    .then(() => console.log('Connected to the database!'))
+    .catch(err => console.error('Failed to connect to the database!', err));
 setupController(app);
 apiController(app);
 
